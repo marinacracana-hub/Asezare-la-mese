@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #FA4083;
+  color: white;
+  text-align: center;
+
+  min-height: 100vh;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+  background: white;
+  color: #FA4083;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+#result ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+#result li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Tablete și desktop */
+@media (min-width: 768px) {
+  .container {
+    max-width: 520px;
+  }
+
+  #result {
+    font-size: 1.2rem;
+  }
+}
